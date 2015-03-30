@@ -1,0 +1,2075 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\MissionBits\projects\SDK\Powercraft\Boards\STM32_rev_1_3\Project.uvproj
+Project File Date:  10/31/2010
+
+<h2>Output:</h2>
+compiling pc_smart_card.c...
+..\STM32_rev_1_3\stm32f10x_it.h(114): warning:  #1295-D: Deprecated declaration Init_ISR - give arg types
+..\STM32_rev_1_3\stm32f10x_it.h:   STM_IT_SCOPE void Init_ISR();
+..\STM32_rev_1_3\stm32f10x_it.h:                     ^
+..\Common\src\pc_smart_card.c(25): error:  #20: identifier "u8r" is undefined
+..\Common\src\pc_smart_card.c:   u8 Smart_Card_Send_Command(u8 cmd, u8 typ, u8 k, u8r ss, u8 bb, u8* dbuf, u8 auth)
+..\Common\src\pc_smart_card.c:                                                    ^
+..\Common\src\pc_smart_card.c(27): error:  #20: identifier "bit" is undefined
+..\Common\src\pc_smart_card.c:          volatile bit ks_flag=0,resp_flag=0,op_flag=0,dt_flag=0,bb_flag=0,csn_flag=0,dec_flag=0,key_flag=0;
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c: KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+..\Common\src\pc_smart_card.c: <error type>KB: Unexpected type: 0
+error type>(33): error:  #20: identifier "smrt_cnt" is undefined
+error type>:    smrt_cnt=0;
+error type>:    ^
+..\Common\src\pc_smart_card.c(37): error:  #20: identifier "POL_AUTH" is undefined
+..\Common\src\pc_smart_card.c:          case POL_AUTH:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(39): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                  clrscr();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(40): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(42): error:  #20: identifier "POL_PRES" is undefined
+..\Common\src\pc_smart_card.c:          case POL_PRES:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(45): error:  #20: identifier "POL_STOP" is undefined
+..\Common\src\pc_smart_card.c:          case POL_STOP:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(50): warning:  #223-D: function "set_baud" declared implicitly
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(50): error:  #20: identifier "SMRT" is undefined
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c(51): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(58): error:  #20: identifier "AUTH_INC" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_INC:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(59): error:  #20: identifier "AUTH_DEC" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_DEC:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(61): error:  #20: identifier "INCREMENT" is undefined
+..\Common\src\pc_smart_card.c:          case INCREMENT:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(62): error:  #20: identifier "DECREMENT" is undefined
+..\Common\src\pc_smart_card.c:          case DECREMENT:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(68): error:  #20: identifier "AUTH_WRITE" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_WRITE:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(70): error:  #20: identifier "WRITE" is undefined
+..\Common\src\pc_smart_card.c:          case WRITE:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(75): error:  #20: identifier "AUTH_READ" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_READ:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(78): error:  #20: identifier "READ" is undefined
+..\Common\src\pc_smart_card.c:          case READ:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(82): error:  #20: identifier "WRITE_KEYS" is undefined
+..\Common\src\pc_smart_card.c:          case WRITE_KEYS:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(129): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(134): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(138): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(140): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(143): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(143): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(150): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(154): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(156): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(157): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(160): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(163): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(163): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(173): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(184): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(186): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 20 warnings, 30 errors
+..\Common\src\pc_smart_card.c - 30 Error(s), 20 Warning(s).
+compiling pc_smart_card.c...
+..\STM32_rev_1_3\stm32f10x_it.h(114): warning:  #1295-D: Deprecated declaration Init_ISR - give arg types
+..\STM32_rev_1_3\stm32f10x_it.h:   STM_IT_SCOPE void Init_ISR();
+..\STM32_rev_1_3\stm32f10x_it.h:                     ^
+..\Common\src\pc_smart_card.c(33): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(37): error:  #20: identifier "POL_AUTH" is undefined
+..\Common\src\pc_smart_card.c:          case POL_AUTH:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(39): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                  clrscr();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(40): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(42): error:  #20: identifier "POL_PRES" is undefined
+..\Common\src\pc_smart_card.c:          case POL_PRES:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(45): error:  #20: identifier "POL_STOP" is undefined
+..\Common\src\pc_smart_card.c:          case POL_STOP:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(50): warning:  #223-D: function "set_baud" declared implicitly
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(50): error:  #20: identifier "SMRT" is undefined
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c(51): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(58): error:  #20: identifier "AUTH_INC" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_INC:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(59): error:  #20: identifier "AUTH_DEC" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_DEC:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(61): error:  #20: identifier "INCREMENT" is undefined
+..\Common\src\pc_smart_card.c:          case INCREMENT:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(62): error:  #20: identifier "DECREMENT" is undefined
+..\Common\src\pc_smart_card.c:          case DECREMENT:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(68): error:  #20: identifier "AUTH_WRITE" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_WRITE:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(70): error:  #20: identifier "WRITE" is undefined
+..\Common\src\pc_smart_card.c:          case WRITE:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(75): error:  #20: identifier "AUTH_READ" is undefined
+..\Common\src\pc_smart_card.c:          case AUTH_READ:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(78): error:  #20: identifier "READ" is undefined
+..\Common\src\pc_smart_card.c:          case READ:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(82): error:  #20: identifier "WRITE_KEYS" is undefined
+..\Common\src\pc_smart_card.c:          case WRITE_KEYS:
+..\Common\src\pc_smart_card.c:               ^
+..\Common\src\pc_smart_card.c(129): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(134): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(138): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(140): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(143): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(143): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(150): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(154): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(156): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(157): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(160): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(163): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(163): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(173): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(184): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(186): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(190): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c(191): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:          disable_serial();
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(29): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 25 warnings, 29 errors
+..\Common\src\pc_smart_card.c - 29 Error(s), 25 Warning(s).
+compiling pc_smart_card.c...
+..\STM32_rev_1_3\stm32f10x_it.h(114): warning:  #1295-D: Deprecated declaration Init_ISR - give arg types
+..\STM32_rev_1_3\stm32f10x_it.h:   STM_IT_SCOPE void Init_ISR();
+..\STM32_rev_1_3\stm32f10x_it.h:                     ^
+..\Common\src\pc_smart_card.c(33): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(39): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                  clrscr();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(40): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(50): warning:  #223-D: function "set_baud" declared implicitly
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(50): error:  #20: identifier "SMRT" is undefined
+..\Common\src\pc_smart_card.c:          set_baud(SMRT);
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c(51): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(129): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(134): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(138): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(140): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(143): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(143): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(150): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(154): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(156): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:                          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                                   ^
+..\Common\src\pc_smart_card.c(157): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:                          disable_serial();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(160): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(163): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(163): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(173): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(184): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(186): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(190): error:  #20: identifier "PCCM" is undefined
+..\Common\src\pc_smart_card.c:          set_baud(PCCM);
+..\Common\src\pc_smart_card.c:                   ^
+..\Common\src\pc_smart_card.c(191): warning:  #223-D: function "disable_serial" declared implicitly
+..\Common\src\pc_smart_card.c:          disable_serial();
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(29): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 25 warnings, 17 errors
+..\Common\src\pc_smart_card.c - 17 Error(s), 25 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(33): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(39): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                  clrscr();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(40): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(51): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(129): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(130): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(134): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(138): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(140): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(143): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(143): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(150): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(151): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(154): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(160): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(163): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(163): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "clrscr" declared implicitly
+..\Common\src\pc_smart_card.c:                          clrscr();
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(173): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(184): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(186): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(29): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 20 warnings, 13 errors
+..\Common\src\pc_smart_card.c - 13 Error(s), 20 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_buzzer.c...
+compiling pc_eeprom.c...
+compiling pc_gpio.c...
+compiling pc_gsm.c...
+compiling pc_keypad.c...
+compiling pc_lcd.c...
+..\Common\src\pc_lcd.c(20): warning:  #550-D: variable "LCD_LineNo" was set but never used
+..\Common\src\pc_lcd.c:   static u8 LCD_LineNo = 0;     // added variable 
+..\Common\src\pc_lcd.c:             ^
+..\Common\src\pc_lcd.c: ..\Common\src\pc_lcd.c: 1 warning, 0 errors
+compiling pc_pc_comm.c...
+compiling pc_printer.c...
+compiling pc_rtc.c...
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(34): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(42): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(52): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(130): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(132): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(135): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(139): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(141): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(144): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(151): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(153): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(155): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(159): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(161): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(164): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(174): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(178): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(185): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(187): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(33): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 17 warnings, 13 errors
+compiling pc_spi_flash.c...
+compiling pc_timer.c...
+compiling pc_usart.c...
+compiling platform_config.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(935): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(935): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                                   ^
+stm32f10x_it.c(937): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(!rec_flag)
+stm32f10x_it.c:                             ^
+stm32f10x_it.c(939): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(946): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(947): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(948): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(961): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                            ^
+stm32f10x_it.c(961): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(966): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(969): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(971): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(1026): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                 ^
+stm32f10x_it.c(1026): error:  #20: identifier "smrt_cnt" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(1028): error:  #20: identifier "rec_flag_rfid" is undefined
+stm32f10x_it.c:                 if(!rec_flag_rfid)
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(1030): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1037): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1038): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1039): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(48): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(49): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(50): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 25 errors
+compiling pc_utils.c...
+Target not created
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(34): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(41): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                  gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(42): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(52): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(130): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(132): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(135): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(139): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(141): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(144): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(151): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(153): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(155): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(159): warning:  #223-D: function "gotoxy" declared implicitly
+..\Common\src\pc_smart_card.c:                          gotoxy(4,1);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(161): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(164): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(174): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(178): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(185): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(187): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(33): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 17 warnings, 13 errors
+..\Common\src\pc_smart_card.c - 13 Error(s), 17 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(34): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(42): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                  lcdprint(" CHECKING CARD .... ");
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(52): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(130): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(132): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(135): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(141): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(144): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(151): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(153): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(155): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(161): warning:  #223-D: function "lcdprint" declared implicitly
+..\Common\src\pc_smart_card.c:                                  lcdprint("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(164): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(174): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(178): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(185): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(187): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(33): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 14 warnings, 13 errors
+..\Common\src\pc_smart_card.c - 13 Error(s), 14 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(34): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(52): warning:  #223-D: function "smrt_wrt" declared implicitly
+..\Common\src\pc_smart_card.c:          smrt_wrt('$');
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(130): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(131): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(132): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(135): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(144): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(144): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(151): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(152): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(153): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(155): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(161): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(163): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(164): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(164): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(174): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(178): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(185): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(187): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(30): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(31): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(32): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(33): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 11 warnings, 15 errors
+..\Common\src\pc_smart_card.c - 15 Error(s), 11 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(29): warning:  #940-D: missing return statement at end of non-void function "smrt_wrt"
+..\Common\src\pc_smart_card.c:   }
+..\Common\src\pc_smart_card.c:   ^
+..\Common\src\pc_smart_card.c(39): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(135): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(140): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(149): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(149): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(156): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(160): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(166): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(168): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(169): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(169): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(183): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(190): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(192): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(35): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(36): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(37): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(38): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 11 warnings, 15 errors
+compiling stm32f10x_it.c...
+stm32f10x_it.c(935): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(935): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                                   ^
+stm32f10x_it.c(937): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(!rec_flag)
+stm32f10x_it.c:                             ^
+stm32f10x_it.c(939): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(946): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(947): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(948): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(961): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                            ^
+stm32f10x_it.c(961): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(966): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(969): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(971): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(1026): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                 ^
+stm32f10x_it.c(1026): error:  #20: identifier "smrt_cnt" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(1028): error:  #20: identifier "rec_flag_rfid" is undefined
+stm32f10x_it.c:                 if(!rec_flag_rfid)
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(1030): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1037): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1038): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1039): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(48): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(49): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(50): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 25 errors
+Project build/rebuild aborted.
+Target not created
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(29): warning:  #940-D: missing return statement at end of non-void function "smrt_wrt"
+..\Common\src\pc_smart_card.c:   }
+..\Common\src\pc_smart_card.c:   ^
+..\Common\src\pc_smart_card.c(39): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(135): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(140): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(149): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(149): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(156): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(160): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(166): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(168): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(169): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(169): error:  #20: identifier "ERRR" is undefined
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                               ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(183): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(190): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(192): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(35): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(36): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(37): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(38): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 11 warnings, 15 errors
+..\Common\src\pc_smart_card.c - 15 Error(s), 11 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(39): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(135): warning:  #223-D: function "StartTimer" declared implicitly
+..\Common\src\pc_smart_card.c:                  StartTimer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(137): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(140): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(156): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(157): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(158): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(160): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(166): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(168): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(169): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(183): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(190): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(192): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(35): warning:  #177-D: variable "csn_no" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u32 csn_no;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(36): warning:  #177-D: variable "NumByte" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u16 NumByte = 0;
+..\Common\src\pc_smart_card.c:              ^
+..\Common\src\pc_smart_card.c(37): warning:  #177-D: variable "tmp_arr" was declared but never referenced
+..\Common\src\pc_smart_card.c:          u8 tmp_arr[4];
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c(38): warning:  #177-D: variable "cmpres" was declared but never referenced
+..\Common\src\pc_smart_card.c:          s8 cmpres=0;
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 9 warnings, 13 errors
+..\Common\src\pc_smart_card.c - 13 Error(s), 9 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(35): error:  #20: identifier "smrt_cnt" is undefined
+..\Common\src\pc_smart_card.c:          smrt_cnt=0;
+..\Common\src\pc_smart_card.c:          ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "StartTimer" declared implicitly
+..\Common\src\pc_smart_card.c:                  StartTimer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(132): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(132): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(133): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(136): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(153): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(153): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(154): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(156): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  if((tout_err)||(SMRTCARD_Buffer[0]=='x'))
+..\Common\src\pc_smart_card.c:                                  ^
+..\Common\src\pc_smart_card.c(162): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(164): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(165): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(175): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(186): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                          SMRTCARDDATA_Buffer[j]=((asctohex(membuf[i])<<4)&0xF0)|((asctohex(membuf[i+1]))&0x0F);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(188): error:  #20: identifier "SMRTCARDDATA_Buffer" is undefined
+..\Common\src\pc_smart_card.c:                  SMRTCARDDATA_Buffer[j]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 5 warnings, 13 errors
+..\Common\src\pc_smart_card.c - 13 Error(s), 5 Warning(s).
+compiling pc_smart_card.c...
+..\Common\inc\pc_globals.h(19): error:  #20: identifier "PC_RX_SIZE" is undefined
+..\Common\inc\pc_globals.h:   vu8 PC_Buffer[PC_RX_SIZE];
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(26): warning:  #1-D: last line of file ends without a newline
+..\Common\inc\pc_globals.h:   #endif
+..\Common\inc\pc_globals.h:         ^
+..\Common\src\pc_smart_card.c(131): warning:  #223-D: function "StartTimer" declared implicitly
+..\Common\src\pc_smart_card.c:                  StartTimer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(132): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(132): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(133): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(152): warning:  #223-D: function "enable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  enable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(153): error:  #20: identifier "rec_flag_rfid" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(153): error:  #20: identifier "tout_err" is undefined
+..\Common\src\pc_smart_card.c:                  while((!rec_flag_rfid)&&(!tout_err));
+..\Common\src\pc_smart_card.c:                                            ^
+..\Common\src\pc_smart_card.c(154): warning:  #223-D: function "disable_timer" declared implicitly
+..\Common\src\pc_smart_card.c:                  disable_timer();
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c(162): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(164): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(165): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(175): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 6 warnings, 9 errors
+..\Common\src\pc_smart_card.c - 9 Error(s), 6 Warning(s).
+compiling pc_smart_card.c...
+..\Common\inc\pc_globals.h(30): warning:  #1-D: last line of file ends without a newline
+..\Common\inc\pc_globals.h:   #endif
+..\Common\inc\pc_globals.h:         ^
+..\Common\src\pc_smart_card.c(162): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String("  CARD NOT FOUND !  ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(164): error:  #165: too few arguments in function call
+..\Common\src\pc_smart_card.c:                                  Glcd_Display_String(" TRANSACTION ERROR! ");
+..\Common\src\pc_smart_card.c:                                                                            ^
+..\Common\src\pc_smart_card.c(165): warning:  #223-D: function "beep" declared implicitly
+..\Common\src\pc_smart_card.c:                          beep(ERRR);
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(175): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(179): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 2 warnings, 4 errors
+..\Common\src\pc_smart_card.c - 4 Error(s), 2 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(175): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 0 warnings, 2 errors
+..\Common\src\pc_smart_card.c - 2 Error(s), 0 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(94): error:  #20: identifier "dbuf" is undefined
+..\Common\src\pc_smart_card.c:                  for(;*dbuf!='\0';dbuf++)
+..\Common\src\pc_smart_card.c:                        ^
+..\Common\src\pc_smart_card.c(116): error:  #20: identifier "dbuf" is undefined
+..\Common\src\pc_smart_card.c:                  for(;*dbuf!='\0';dbuf++)
+..\Common\src\pc_smart_card.c:                        ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 0 warnings, 2 errors
+..\Common\src\pc_smart_card.c - 2 Error(s), 0 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(175): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                          membuf[i] = SMRTCARD_Buffer[i];
+..\Common\src\pc_smart_card.c:                          ^
+..\Common\src\pc_smart_card.c(177): error:  #20: identifier "membuf" is undefined
+..\Common\src\pc_smart_card.c:                  membuf[i]='\0';
+..\Common\src\pc_smart_card.c:                  ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 0 warnings, 2 errors
+..\Common\src\pc_smart_card.c - 2 Error(s), 0 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c(20): error:  #20: identifier "BUF_LEN" is undefined
+..\Common\src\pc_smart_card.c:   u8 membuf[BUF_LEN]={0};
+..\Common\src\pc_smart_card.c:             ^
+..\Common\src\pc_smart_card.c: ..\Common\src\pc_smart_card.c: 0 warnings, 1 error
+..\Common\src\pc_smart_card.c - 1 Error(s), 0 Warning(s).
+compiling pc_smart_card.c...
+..\Common\src\pc_smart_card.c - 0 Error(s), 0 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(935): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(935): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                                   ^
+stm32f10x_it.c(937): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(!rec_flag)
+stm32f10x_it.c:                             ^
+stm32f10x_it.c(939): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(946): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(947): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(948): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(961): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                            ^
+stm32f10x_it.c(961): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(966): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(968): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(969): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(971): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(973): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Buffer" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(977): error:  #20: identifier "PC_Rx_Cnt" is undefined
+stm32f10x_it.c:                                 PC_Buffer[PC_Rx_Cnt++] = rec;
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(1026): error:  #20: identifier "SMRTCARD_Buffer" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                 ^
+stm32f10x_it.c(1026): error:  #20: identifier "smrt_cnt" is undefined
+stm32f10x_it.c:                 SMRTCARD_Buffer[smrt_cnt++]=rec;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(1028): error:  #20: identifier "rec_flag_rfid" is undefined
+stm32f10x_it.c:                 if(!rec_flag_rfid)
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(1030): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1037): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1038): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1039): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(48): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(49): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(50): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 25 errors
+stm32f10x_it.c - 25 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(932): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                     ^
+stm32f10x_it.c(932): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                 if((smrt_comm) | (etim_comm))   
+stm32f10x_it.c:                                   ^
+stm32f10x_it.c(934): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(!rec_flag)
+stm32f10x_it.c:                             ^
+stm32f10x_it.c(936): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(943): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(944): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(945): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(958): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                            ^
+stm32f10x_it.c(958): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(963): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(966): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(968): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(1027): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1034): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1035): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1036): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 16 errors
+stm32f10x_it.c - 16 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(932): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(!rec_flag)
+stm32f10x_it.c:                             ^
+stm32f10x_it.c(934): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(941): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(942): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(943): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(943): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                                 ^
+stm32f10x_it.c(943): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                                                                ^
+stm32f10x_it.c(956): error:  #20: identifier "rec_flag" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                            ^
+stm32f10x_it.c(956): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(961): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(964): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(966): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(1025): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1032): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1033): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1034): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 16 errors
+stm32f10x_it.c - 16 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(934): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                                 if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                            ^
+stm32f10x_it.c(941): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                         if(i != BUF_LEN)
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(942): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                                 membuf[i++] = rec;
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(943): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                     ^
+stm32f10x_it.c(943): error:  #20: identifier "smrt_comm" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                                 ^
+stm32f10x_it.c(943): error:  #20: identifier "etim_comm" is undefined
+stm32f10x_it.c:                                         if(((rec == ENDCHR) && (smrt_comm)) || ((i == 128) && (etim_comm)))
+stm32f10x_it.c:                                                                                                ^
+stm32f10x_it.c(956): error:  #20: identifier "STR_CHR" is undefined
+stm32f10x_it.c:                         if(rec_flag==0&&rec == STR_CHR)
+stm32f10x_it.c:                                                ^
+stm32f10x_it.c(961): error:  #20: identifier "ACK_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == ACK_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(964): error:  #20: identifier "ack_flag" is undefined
+stm32f10x_it.c:                                 ack_flag = 1;
+stm32f10x_it.c:                                 ^
+stm32f10x_it.c(966): error:  #20: identifier "END_CHR" is undefined
+stm32f10x_it.c:                         else if(rec == END_CHR)
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(1025): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1032): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1033): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1034): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 14 errors
+stm32f10x_it.c - 14 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(994): error:  #20: identifier "STRCHR" is undefined
+stm32f10x_it.c:                         if((rec == STRCHR) && (!start))
+stm32f10x_it.c:                                    ^
+stm32f10x_it.c(1001): error:  #20: identifier "BUF_LEN" is undefined
+stm32f10x_it.c:                                 if(i != BUF_LEN)
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1002): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(1003): error:  #20: identifier "ENDCHR" is undefined
+stm32f10x_it.c:                                 if(rec == ENDCHR)
+stm32f10x_it.c:                                           ^
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 4 errors
+stm32f10x_it.c - 4 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(1002): error:  #20: identifier "membuf" is undefined
+stm32f10x_it.c:                                         membuf[i++] = rec;
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 1 error
+stm32f10x_it.c - 1 Error(s), 3 Warning(s).
+compiling stm32f10x_it.c...
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+stm32f10x_it.c - 0 Error(s), 3 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 3 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+compiling pc_globals.c...
+..\Common\inc\pc_globals.h(27): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 PC_Buffer[PC_RX_SIZE];
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(28): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 PC_Rx_Cnt;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(29): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 PC_Rx_Flag;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(30): error:  #20: identifier "vu32" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu32 smrt_cnt;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(31): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 rec_flag_rfid;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(32): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 tout_err;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\inc\pc_globals.h(34): error:  #20: identifier "vu8" is undefined
+..\Common\inc\pc_globals.h:   GLOBALS_SCOPE vu8 rec_flag;
+..\Common\inc\pc_globals.h:                 ^
+..\Common\src\pc_globals.c(19): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 PC_Buffer[PC_RX_SIZE] = {0};
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(20): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 PC_Rx_Cnt = 0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(21): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 PC_Rx_Flag = 0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(22): error:  #20: identifier "vu32" is undefined
+..\Common\src\pc_globals.c:   vu32 smrt_cnt=0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(23): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 rec_flag_rfid=0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(24): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 tout_err=0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c(26): warning:  #1-D: last line of file ends without a newline
+..\Common\src\pc_globals.c:   vu8 rec_flag=0;
+..\Common\src\pc_globals.c:                  ^
+..\Common\src\pc_globals.c(26): error:  #20: identifier "vu8" is undefined
+..\Common\src\pc_globals.c:   vu8 rec_flag=0;
+..\Common\src\pc_globals.c:   ^
+..\Common\src\pc_globals.c: ..\Common\src\pc_globals.c: 1 warning, 14 errors
+Target not created
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+compiling pc_globals.c...
+..\Common\src\pc_globals.c(26): warning:  #1-D: last line of file ends without a newline
+..\Common\src\pc_globals.c:   vu8 rec_flag=0;
+..\Common\src\pc_globals.c:                  ^
+..\Common\src\pc_globals.c: ..\Common\src\pc_globals.c: 1 warning, 0 errors
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 4 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(45): warning:  #177-D: variable "Sec_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Sec_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(46): warning:  #177-D: variable "Min_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Min_Cnt  = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c(47): warning:  #177-D: variable "Hour_Cnt" was declared but never referenced
+stm32f10x_it.c:   static unsigned char Hour_Cnt = 0;
+stm32f10x_it.c:                        ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 3 Warning(s).
+Build target 'STM32F10X_XL'
+compiling stm32f10x_it.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_gsm.c...
+compiling pc_keypad.c...
+compiling pc_pc_comm.c...
+compiling pc_smart_card.c...
+compiling pc_usart.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling stm32f10x_it.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_buzzer.c...
+compiling pc_eeprom.c...
+compiling pc_gpio.c...
+compiling pc_gsm.c...
+compiling pc_keypad.c...
+compiling pc_lcd.c...
+..\Common\src\pc_lcd.c(20): warning:  #550-D: variable "LCD_LineNo" was set but never used
+..\Common\src\pc_lcd.c:   static u8 LCD_LineNo = 0;     // added variable 
+..\Common\src\pc_lcd.c:             ^
+..\Common\src\pc_lcd.c: ..\Common\src\pc_lcd.c: 1 warning, 0 errors
+compiling pc_pc_comm.c...
+compiling pc_printer.c...
+compiling pc_rtc.c...
+compiling pc_smart_card.c...
+compiling pc_spi_flash.c...
+compiling pc_timer.c...
+compiling pc_usart.c...
+compiling platform_config.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+compiling pc_utils.c...
+compiling pc_globals.c...
+..\Common\src\pc_globals.c(26): warning:  #1-D: last line of file ends without a newline
+..\Common\src\pc_globals.c:   vu8 rec_flag=0;
+..\Common\src\pc_globals.c:                  ^
+..\Common\src\pc_globals.c: ..\Common\src\pc_globals.c: 1 warning, 0 errors
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 2 Warning(s).
+Build target 'STM32F10X_XL'
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_xl.s...
+compiling pc_buzzer.c...
+compiling pc_eeprom.c...
+compiling pc_gpio.c...
+compiling pc_gsm.c...
+compiling pc_keypad.c...
+compiling pc_lcd.c...
+..\Common\src\pc_lcd.c(20): warning:  #550-D: variable "LCD_LineNo" was set but never used
+..\Common\src\pc_lcd.c:   static u8 LCD_LineNo = 0;     // added variable 
+..\Common\src\pc_lcd.c:             ^
+..\Common\src\pc_lcd.c: ..\Common\src\pc_lcd.c: 1 warning, 0 errors
+compiling pc_pc_comm.c...
+compiling pc_printer.c...
+compiling pc_rtc.c...
+compiling pc_smart_card.c...
+compiling pc_spi_flash.c...
+compiling pc_timer.c...
+compiling pc_usart.c...
+compiling platform_config.c...
+compiling system_init.c...
+compiling stm32f10x_it.c...
+compiling pc_fonts.c...
+compiling pc_utils.c...
+compiling pc_globals.c...
+..\Common\src\pc_globals.c(26): warning:  #1-D: last line of file ends without a newline
+..\Common\src\pc_globals.c:   vu8 rec_flag=0;
+..\Common\src\pc_globals.c:                  ^
+..\Common\src\pc_globals.c: ..\Common\src\pc_globals.c: 1 warning, 0 errors
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 2 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_globals.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_spi_flash.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_spi_flash.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_pc_comm.c...
+compiling system_init.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_pc_comm.c...
+compiling system_init.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_spi_flash.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).
+Build target 'STM32F10X_XL'
+compiling pc_spi_flash.c...
+creating Library...
+"..\..\Libs\STM32_rev_1_3.lib" - 0 Error(s), 0 Warning(s).

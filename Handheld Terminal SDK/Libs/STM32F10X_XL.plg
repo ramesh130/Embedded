@@ -1,0 +1,12 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Powercraft\Ramesh\SDK\Powercraft\Boards\STM32_rev_1_3\Project.uvproj
+Project File Date:  10/30/2010
+
+<h2>Output:</h2>
+Build target 'STM32F10X_XL'
+creating Library...
+"..\..\Libs\STM32F10X_XL.lib" - 0 Error(s), 0 Warning(s).
